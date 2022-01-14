@@ -46,7 +46,6 @@ a{
     justify-content: space-between;
     align-items: center;
     max-width: 100%;
-    border: 1px solid red;
     font-size: var(--size-medium);
 }
 .logo{
@@ -71,10 +70,14 @@ a{
 
 /* view */
 .view{
+    position: sticky;
+    top: 0px;
     max-width: 1200px;
     margin:0 auto;
 }
-
+.header-white{
+    background-color: #fff;
+}
 /* info */
 .info{
     color: var(--color-black);
@@ -84,9 +87,22 @@ a{
     color: var(--color-skyblue);
     font-size: var(--size-micro);
 }
+.info__title{
+    display: flex;
+}
 .info__title h4{
     margin: 0;
     font-size: var(--size-small);
+    width: 100%;
+}
+.ellipsis{
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+.fa-caret-down{
+    padding:10px;
+    cursor: pointer;
 }
 .info__view{
     font-size: var(--size-micro);
@@ -186,9 +202,9 @@ a{
 
 
 /* medai query */
-@media screen and (min-width: 780px){
-   
-
+@media screen and (min-width: 1200px){
+    .container{display: flex;}
+    .view{background-color: #fff;}
 }
 
 
