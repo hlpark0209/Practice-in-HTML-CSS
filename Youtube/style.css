@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-/* font-family: 'Press Start 2P', cursive; */
 
 
 body{
     margin: 0px;
     padding:0px;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 ul{
     list-style: none;
@@ -24,14 +24,14 @@ a{
     /* color */
     --color-black : #343434;
     --color-gray : #ddd;
-    --color-red : #d40000;
+    --color-red : #eb0000;
     --color-skyblue : #006dd4;
 
-    /* size */
-    --size-large : 22px;
-    --size-medium : 16px;
-    --size-small : 12px;
-    --size-micro: 8px;
+    /* font size */
+    --size-large : 28px;
+    --size-medium : 24px;
+    --size-small : 18px;
+    --size-micro: 14px;
 
     /* bold */
     --bold:700;
@@ -44,12 +44,54 @@ a{
 .header{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     max-width: 100%;
     border: 1px solid red;
-}
-.logo{
-
-}
-.fa-youtube{
     font-size: var(--size-medium);
 }
+.logo{
+    margin: 15px;
+}
+.fa-youtube{
+    color: var(--color-red);
+}
+
+.logo span{
+    color: var(--color-black);
+    font-weight: var(--bold);
+}
+.header__search{
+    margin:15px;
+    font-size: var(--size-small);
+}
+.fa-search{
+    padding-right:15px;
+}
+
+
+/* view */
+.view{
+    max-width: 1200px;
+    margin:0 auto;
+}
+
+/* info */
+.info{
+    border: 3px solid blue;
+    color: var(--color-black);
+}
+.info__hash{
+    color: var(--color-skyblue);
+    font-size: var(--size-micro);
+}
+.info__title h4{
+    margin: 0;
+    font-size: var(--size-small);
+}
+.info__view{
+    font-size: var(--size-micro);
+}
+.info__view__date{
+    margin-left: 7px;
+}
+
