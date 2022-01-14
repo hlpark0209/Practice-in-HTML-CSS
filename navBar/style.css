@@ -1,0 +1,95 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+    padding:0px;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* color */
+:root{
+    --backgroud-color :#263343;
+    --accent-color : #d49466;
+    --color : #ffffff;
+}
+
+.navbar{
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--backgroud-color);
+    align-items: center;
+}
+.logo{
+    font-size: 1.3em;
+    margin-left: 10px;
+}
+
+.logo .fa-accusoft{
+    color: var(--accent-color);
+}
+
+.logo__name{
+    color: var(--color);
+    font-weight: 500;
+    padding-left: 5px;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.item{
+    color: var(--color);
+    padding: 8px 13px 13px 13px;
+    vertical-align: middle;
+}
+.item:hover{
+    background-color: var(--accent-color);
+    border-radius: 3px;
+}
+.contact{
+    margin-right: 7px;
+}
+
+.contact .fab{
+    color: var(--color);
+    font-size: 1.3em;
+    margin: 7px;
+}
+
+.toggleBtn{
+    display:none;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding:20px ;
+    color: var(--accent-color);
+    font-size: 1.4em;
+    cursor: pointer;
+}
+
+/* medai query */
+@media screen and (max-width: 720px){
+    body {background-color: lightgreen;}
+    .logo{display: flex; align-items: center; width: 100%;}
+    .navbar{flex-direction: column; justify-content: space-between;}
+    .menu{flex-direction: column;}
+    nav{width: 100%; text-align: center; }
+    .menu, .contact{font-size: 1.2em; display:none; }
+    .toggleBtn{display:block;}
+    .navbar{padding:20px;}
+    .active{display: block; transition: all 0.2s ease-in-out;}
+    }
+
+
+
