@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+/* font-family: 'Press Start 2P', cursive; */
+
+
+body{
+    margin: 0px;
+    padding:0px;
+}
+ul{
+    list-style: none;
+    margin: 0px;
+    padding:0px;
+}
+button{
+    border:none;
+    cursor: pointer;
+    outline: none;
+}
+a{
+    text-decoration: none;
+}
+
+:root{
+    /* color */
+    --color-black : #343434;
+    --color-gray : #ddd;
+    --color-red : #d40000;
+    --color-skyblue : #006dd4;
+
+    /* size */
+    --size-large : 22px;
+    --size-medium : 16px;
+    --size-small : 12px;
+    --size-micro: 8px;
+
+    /* bold */
+    --bold:700;
+    --light:400;
+}
+
+
+
+/* header */
+.header{
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    border: 1px solid red;
+}
+.logo{
+
+}
+.fa-youtube{
+    font-size: var(--size-medium);
+}
