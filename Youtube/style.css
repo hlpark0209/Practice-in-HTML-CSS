@@ -72,12 +72,17 @@ a{
 .view{
     position: sticky;
     top: 0px;
+    text-align: center;
+}
+.view video{
+    width:100%;
+    height: 100%;
     max-width: 1200px;
-    margin:0 auto;
 }
 .header-white{
     background-color: #fff;
 }
+
 /* info */
 .info{
     color: var(--color-black);
@@ -93,16 +98,21 @@ a{
 .info__title h4{
     margin: 0;
     font-size: var(--size-small);
-    width: 100%;
 }
-.ellipsis{
-    overflow:hidden;
-    text-overflow:ellipsis;
-    white-space:nowrap;
+.clamp{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
 }
 .fa-caret-down{
+    height: 100%;
     padding:10px;
     cursor: pointer;
+    transition : transform 0.3s ease-in-out;
+}
+.fa-caret-down.rotate{
+    transform:rotate(180deg);
 }
 .info__view{
     font-size: var(--size-micro);
